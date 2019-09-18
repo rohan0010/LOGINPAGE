@@ -49,7 +49,8 @@ passport.deserializeUser(function(user, done){
 
 // Redirection
 app.get('/success', (req, res)=>{
-    res.send('Login Sucessful' + req.user);
+    // res.send('Login Sucessful' + req.user);
+    res.redirect('../mainmenu.html');  
 })
 
 // User Validation
